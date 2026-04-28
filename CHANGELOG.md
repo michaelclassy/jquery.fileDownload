@@ -1,5 +1,43 @@
 <h2>jQuery File Download Changelog</h2>
 
+<h4>01/30/2017 - 1.4.6</h4>
+<ul>
+    <li>Added <code>FileDownloadOptions</code> callback signatures (prepare/success/abort/fail) and fixed callback options signatures</li>
+</ul>
+
+<h4>09/29/2016 - 1.4.5</h4>
+<ul>
+    <li>Fallback to <code>window</code> if <code>this</code> is undefined (strict-mode / module loader compatibility)</li>
+</ul>
+
+<h4>07/11/2016 - 1.4.4</h4>
+<ul>
+    <li>Added <code>abort()</code> method that does not cause an error and invokes the <code>abortCallback</code></li>
+</ul>
+
+<h4>04/16/2016</h4>
+<ul>
+    <li>Added TypeScript definitions (<code>jquery.fileDownload.d.ts</code>)</li>
+</ul>
+
+<h4>10/15/2015</h4>
+<ul>
+    <li>Added <code>package.json</code> / <code>index.js</code> for npm support</li>
+</ul>
+
+<h4>04/28/2015 - 1.4.3</h4>
+<ul>
+    <li>Pass the original exception <code>Error</code> as a third argument to <code>failCallback</code></li>
+    <li>Resolved an issue where POST values containing "=" were not transmitted correctly</li>
+</ul>
+
+<h4>03/16/2015 - 1.4.2</h4>
+<ul>
+    <li>Made cookie filename comparison case insensitive</li>
+    <li>Guard against non-string <code>cookieValue</code></li>
+    <li>Added bower support (fixes issue #79)</li>
+</ul>
+
 <h4>6/01/2013 - 1.4.1</h4>
 <ul>
 	<li>Merged pull fixing constant location. Thanks Djemo!</li>
